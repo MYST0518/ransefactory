@@ -671,6 +671,38 @@ section {
   border: none;
 }
 
+.split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.about-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.about-table tr {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.about-table th {
+  text-align: left;
+  padding: 15px 10px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  width: 120px;
+  vertical-align: top;
+}
+
+.about-table td {
+  padding: 15px 10px;
+  color: var(--text-dark);
+}
+
 /* Form Styles */
 .form-progress {
   display: flex;
@@ -1110,8 +1142,32 @@ footer {
   .cat-grid,
   .cases-grid,
   .reviews-grid,
-  .footer-grid {
+  .footer-grid,
+  .split-grid {
     grid-template-columns: 1fr;
+  }
+  .split-grid {
+    gap: 20px;
+  }
+  section {
+    padding: 40px 15px;
+  }
+  .hero {
+    padding: 60px 15px 80px 15px !important;
+  }
+  .about-table tr {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .about-table th {
+    width: 100%;
+    padding: 5px 0 !important;
+  }
+  .about-table td {
+    width: 100%;
+    padding: 5px 0 10px 0 !important;
   }
   .form-card {
     padding: 20px;
@@ -1119,6 +1175,16 @@ footer {
   .form-group.row {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-ctas .btn {
+    width: 100%;
   }
 }
 
