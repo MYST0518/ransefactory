@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>無料オンライン査定・お問い合わせ - 乱世工房（Ranse Factory）| 徳島・美馬郡</title>
-  <meta name="description" content="徳島県美馬郡の買取専門店「乱世工房（Ranse Factory）」の無料オンライン査定・お問い合わせページです。品物の写真を撮って送るだけで、簡単にお見積もり・査定が可能です。">
+  <title>無料オンライン査定・お問い合わせ - 乱世工房（Ranse Factory）| 徳島・香川</title>
+  <meta name="description" content="徳島県美馬郡の不用品買取専門店「乱世工房（Ranse Factory）」の無料オンライン査定・お問い合わせページです。品物の写真を撮って送るだけで、簡単にお見積もり・査定が可能です。空き家管理や片付けのご相談も承ります。">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,7 +34,7 @@
       <div class="hero-tagline">ONLINE ASSESSMENT FORM</div>
       <h1 class="hero-title" style="font-size: 32px; margin-bottom: 15px;">無料ネット査定・ご相談</h1>
       <p class="hero-desc" style="font-size: 15px; margin-bottom: 0; max-width: 600px; margin-left: auto; margin-right: auto;">
-        スマートフォンのカメラで撮影した写真を添付していただくことで、大まかな査定額をメールでお知らせいたします。以下のフォームよりお気軽にご依頼ください。
+        スマートフォンのカメラで撮影した写真を添付していただくことで、大まかな査定額をメールでお知らせいたします。また、お家の片付けや空き家管理についてのご相談も以下よりお気軽にご依頼ください。
       </p>
     </div>
   </section>
@@ -65,7 +65,6 @@
       <div class="form-card">
         <form id="estimationForm" enctype="multipart/form-data">
           <!-- Web3Forms Config -->
-          <!-- Web3Forms Access Key: Using a default key generated for testing or instructions to replace it -->
           <input type="hidden" name="access_key" value="1823e8cb-82fc-4741-baec-a17d08ee8f1e">
           <input type="hidden" name="subject" value="【乱世工房】オンライン無料査定の依頼が届きました">
           <input type="hidden" name="from_name" value="乱世工房 オンライン査定窓口">
@@ -91,28 +90,28 @@
               <input type="email" id="email" name="email" class="form-control" placeholder="例：ransefactory@gmail.com" required>
             </div>
 
-            <h3 style="font-size: 18px; color: var(--primary-dark); margin-top: 40px; margin-bottom: 25px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">お品物の情報</h3>
+            <h3 style="font-size: 18px; color: var(--primary-dark); margin-top: 40px; margin-bottom: 25px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">ご相談・お品物の情報</h3>
 
             <div class="form-group">
-              <label for="category">買取希望ジャンル <span class="required">※必須</span></label>
+              <label for="category">ご希望ジャンル <span class="required">※必須</span></label>
               <select id="category" name="category" class="form-control" required>
                 <option value="" disabled selected>選択してください</option>
-                <option value="貴金属">金・プラチナ・貴金属</option>
-                <option value="ブランド品・時計">ブランドバッグ・高級時計</option>
-                <option value="家電・デジカメ">家電・デジタル機器</option>
-                <option value="骨董品・古美術">美術品・骨董品</option>
-                <option value="工具">工具・電動工具</option>
-                <option value="その他">その他（趣味・玩具・楽器等）</option>
+                <option value="鉄くず・農機具・処分品">鉄くず・農機具・処分品</option>
+                <option value="パソコン・ゲーム機">パソコン・ゲーム機</option>
+                <option value="家電製品">家電製品（テレビ・洗濯機等）</option>
+                <option value="お宝（骨董品・着物・貴金属等）">お宝（骨董品・着物・貴金属等）</option>
+                <option value="趣味・コレクション・工具">趣味・コレクション・工具</option>
+                <option value="その他・お困りごと相談">その他・お困りごと相談（片付け・空き家管理等）</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label for="details">品物の詳細・状態など</label>
-              <textarea id="details" name="details" class="form-control" placeholder="例：メーカー名、型番、使用年数、傷やサビの有無、付属品の有無などをご記入いただけますと、より正確な査定が可能です。"></textarea>
+              <label for="details">ご相談の詳細・品物の状態など</label>
+              <textarea id="details" name="details" class="form-control" placeholder="例：お品物査定の場合は、メーカー名、型番、動作状況、傷やサビの有無などを。「お困りごと解決メニュー」の場合は、片付けの規模やご希望の日程などをご自由にご記入ください。"></textarea>
             </div>
 
             <div class="form-group">
-              <label>お品物の写真添付（最大5MBまで）</label>
+              <label>お品物や現場の写真添付（最大5MBまで）</label>
               <div class="file-upload-wrapper">
                 <div class="file-upload-icon">📷</div>
                 <div class="file-upload-text">クリックして写真をアップロード、またはここにドラッグ＆ドロップ</div>
@@ -150,11 +149,11 @@
                 <div class="confirm-val" id="confirmEmail"></div>
               </div>
               <div class="confirm-row">
-                <div class="confirm-label">買取ジャンル</div>
+                <div class="confirm-label">ご希望ジャンル</div>
                 <div class="confirm-val" id="confirmCategory"></div>
               </div>
               <div class="confirm-row">
-                <div class="confirm-label">お品物の詳細</div>
+                <div class="confirm-label">ご相談内容</div>
                 <div class="confirm-val" id="confirmDetails"></div>
               </div>
               <div class="confirm-row" style="border-bottom: none;">
@@ -172,11 +171,11 @@
           <!-- STEP 3: THANK YOU SCREEN -->
           <div id="step3" class="success-screen" style="display: none;">
             <div class="success-icon">✓</div>
-            <h3>査定のご依頼ありがとうございます！</h3>
+            <h3>査定・ご相談のご依頼ありがとうございます！</h3>
             <p>
-              査定依頼の送信が正常に完了いたしました。<br>
+              送信が正常に完了いたしました。<br>
               ご記入いただいたメールアドレスへ、自動返信メールを送信しておりますのでご確認ください。<br><br>
-              追って担当者より、折り返しメールまたはお電話（090-1176-0994）にて査定結果のご連絡をさせていただきます。<br>
+              追って担当者より、折り返しメールまたはお電話（090-1176-0994）にてご連絡をさせていただきます。<br>
               今しばらくお待ちくださいますようお願いいたします。
             </p>
             <a href="index.html" class="btn" style="background-color: var(--primary); color: white; padding: 12px 30px;">トップページへ戻る</a>
@@ -191,7 +190,7 @@
         <a href="tel:090-1176-0994" style="font-size: 24px; font-weight: 800; color: var(--secondary); display: inline-flex; align-items: center; gap: 8px;">
           📞 090-1176-0994
         </a>
-        <div style="font-size: 12px; color: var(--text-light); margin-top: 5px;">受付時間：10:00 〜 20:00（年中無休）</div>
+        <div style="font-size: 12px; color: var(--text-light); margin-top: 5px;">受付時間：10:00 〜 20:00（年中無休・土日祝営業）</div>
       </div>
 
     </div>
@@ -203,7 +202,7 @@
       <div class="footer-about">
         <div class="footer-logo">乱世工房<span>Ranse Factory</span></div>
         <p>
-          徳島県美馬郡を拠点とする地域密着型の高価買取店です。不用品の査定、生前・遺品整理、修理のご相談まで、何でも丁寧に対応いたします。
+          徳島・香川全域対応の不用品買取専門店です。不用品の査定、お家の片付け、生前・遺品整理、空き家管理のご相談まで、何でも丁寧に対応いたします。
         </p>
       </div>
       <div class="footer-links">
@@ -231,7 +230,7 @@
         <ul class="footer-contact-info">
           <li>
             <span>📍</span>
-            <div>〒779-4101<br>徳島県美馬郡つるぎ町貞光東浦21-11</div>
+            <div>〒779-4101<br>徳島県美馬郡つるぎ町貞光字東浦21番地</div>
           </li>
           <li>
             <span>📞</span>
