@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>無料オンライン査定・お問い合わせ - 乱世工房（Ranse Factory）| 徳島・美馬郡</title>
+  <meta name="description" content="徳島県美馬郡の買取専門店「乱世工房（Ranse Factory）」の無料オンライン査定・お問い合わせページです。品物の写真を撮って送るだけで、簡単にお見積もり・査定が可能です。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">乱世工房<span>Ranse Factory</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="メニュー開閉">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">トップ</a></li>
+        <li><a href="categories.html" class="nav-link">買取品目</a></li>
+        <li><a href="cases.html" class="nav-link">買取実績</a></li>
+        <li><a href="about.html" class="nav-link">店舗情報・地図</a></li>
+        <li><a href="contact.html" class="btn-nav-cta">無料ネット査定</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="hero" style="padding: 60px 20px 80px 20px;">
+    <div class="hero-content">
+      <div class="hero-tagline">ONLINE ASSESSMENT FORM</div>
+      <h1 class="hero-title" style="font-size: 32px; margin-bottom: 15px;">無料ネット査定・ご相談</h1>
+      <p class="hero-desc" style="font-size: 15px; margin-bottom: 0; max-width: 600px; margin-left: auto; margin-right: auto;">
+        スマートフォンのカメラで撮影した写真を添付していただくことで、大まかな査定額をメールでお知らせいたします。以下のフォームよりお気軽にご依頼ください。
+      </p>
+    </div>
+  </section>
+
+  <!-- FORM SECTION -->
+  <section>
+    <div class="container">
+      
+      <!-- Progress Bar -->
+      <div class="form-progress">
+        <div class="progress-step active" id="progressStep1">
+          <div class="progress-num">1</div>
+          <span>情報入力</span>
+        </div>
+        <div class="progress-line" id="progressLine1"></div>
+        <div class="progress-step" id="progressStep2">
+          <div class="progress-num">2</div>
+          <span>確認画面</span>
+        </div>
+        <div class="progress-line" id="progressLine2"></div>
+        <div class="progress-step" id="progressStep3">
+          <div class="progress-num">3</div>
+          <span>送信完了</span>
+        </div>
+      </div>
+
+      <!-- Main Form Card -->
+      <div class="form-card">
+        <form id="estimationForm" enctype="multipart/form-data">
+          <!-- Web3Forms Config -->
+          <!-- Web3Forms Access Key: Using a default key generated for testing or instructions to replace it -->
+          <input type="hidden" name="access_key" value="8f12c1b7-a38d-4f1b-a5d5-2e0618037190">
+          <input type="hidden" name="subject" value="【乱世工房】オンライン無料査定の依頼が届きました">
+          <input type="hidden" name="from_name" value="乱世工房 オンライン査定窓口">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+          <!-- STEP 1: INPUT SCREEN -->
+          <div id="step1">
+            <h3 style="font-size: 18px; color: var(--primary-dark); margin-bottom: 25px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">お客様情報の入力</h3>
+            
+            <div class="form-group row">
+              <div>
+                <label for="name">お名前 <span class="required">※必須</span></label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="例：山田 太郎" required>
+              </div>
+              <div>
+                <label for="phone">電話番号 <span class="required">※必須</span></label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="例：09011760994" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">メールアドレス <span class="required">※必須</span></label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="例：ransefactory@gmail.com" required>
+            </div>
+
+            <h3 style="font-size: 18px; color: var(--primary-dark); margin-top: 40px; margin-bottom: 25px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">お品物の情報</h3>
+
+            <div class="form-group">
+              <label for="category">買取希望ジャンル <span class="required">※必須</span></label>
+              <select id="category" name="category" class="form-control" required>
+                <option value="" disabled selected>選択してください</option>
+                <option value="貴金属">金・プラチナ・貴金属</option>
+                <option value="ブランド品・時計">ブランドバッグ・高級時計</option>
+                <option value="家電・デジカメ">家電・デジタル機器</option>
+                <option value="骨董品・古美術">美術品・骨董品</option>
+                <option value="工具">工具・電動工具</option>
+                <option value="その他">その他（趣味・玩具・楽器等）</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="details">品物の詳細・状態など</label>
+              <textarea id="details" name="details" class="form-control" placeholder="例：メーカー名、型番、使用年数、傷やサビの有無、付属品の有無などをご記入いただけますと、より正確な査定が可能です。"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>お品物の写真添付（最大5MBまで）</label>
+              <div class="file-upload-wrapper">
+                <div class="file-upload-icon">📷</div>
+                <div class="file-upload-text">クリックして写真をアップロード、またはここにドラッグ＆ドロップ</div>
+                <div style="font-size:12px; color:var(--text-light); margin-top:5px;">※スマホからそのままカメラ撮影して添付できます</div>
+                <input type="file" id="photoUpload" name="attachment" class="file-upload-input" accept="image/*">
+              </div>
+              
+              <!-- Image Preview Container -->
+              <div class="image-preview" id="imagePreview">
+                <img id="previewImg" src="" alt="添付画像プレビュー">
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" class="btn-form btn-form-next" id="nextBtn">入力内容を確認する ➔</button>
+            </div>
+          </div>
+
+          <!-- STEP 2: CONFIRMATION SCREEN -->
+          <div id="step2" style="display: none;">
+            <h3 style="font-size: 18px; color: var(--primary-dark); margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">入力内容の確認</h3>
+            <p style="font-size: 14px; color: var(--text-light); margin-bottom: 25px;">以下の内容で送信します。間違いがなければ「送信する」ボタンを押してください。</p>
+
+            <div class="confirm-preview">
+              <div class="confirm-row">
+                <div class="confirm-label">お名前</div>
+                <div class="confirm-val" id="confirmName"></div>
+              </div>
+              <div class="confirm-row">
+                <div class="confirm-label">電話番号</div>
+                <div class="confirm-val" id="confirmPhone"></div>
+              </div>
+              <div class="confirm-row">
+                <div class="confirm-label">メールアドレス</div>
+                <div class="confirm-val" id="confirmEmail"></div>
+              </div>
+              <div class="confirm-row">
+                <div class="confirm-label">買取ジャンル</div>
+                <div class="confirm-val" id="confirmCategory"></div>
+              </div>
+              <div class="confirm-row">
+                <div class="confirm-label">お品物の詳細</div>
+                <div class="confirm-val" id="confirmDetails"></div>
+              </div>
+              <div class="confirm-row" style="border-bottom: none;">
+                <div class="confirm-label">添付写真</div>
+                <div class="confirm-val" id="confirmPhotoName"></div>
+              </div>
+            </div>
+
+            <div class="form-actions" style="margin-top: 40px;">
+              <button type="button" class="btn-form btn-form-prev" id="prevBtn">⬅ 修正する</button>
+              <button type="submit" class="btn-form btn-form-submit" id="submitBtn">この内容で査定依頼する 👍</button>
+            </div>
+          </div>
+
+          <!-- STEP 3: THANK YOU SCREEN -->
+          <div id="step3" class="success-screen" style="display: none;">
+            <div class="success-icon">✓</div>
+            <h3>査定のご依頼ありがとうございます！</h3>
+            <p>
+              査定依頼の送信が正常に完了いたしました。<br>
+              ご記入いただいたメールアドレスへ、自動返信メールを送信しておりますのでご確認ください。<br><br>
+              追って担当者より、折り返しメールまたはお電話（090-1176-0994）にて査定結果のご連絡をさせていただきます。<br>
+              今しばらくお待ちくださいますようお願いいたします。
+            </p>
+            <a href="index.html" class="btn" style="background-color: var(--primary); color: white; padding: 12px 30px;">トップページへ戻る</a>
+          </div>
+        </form>
+      </div>
+
+      <!-- Phone Alternate CTA -->
+      <div style="max-width: 700px; margin: 40px auto 0 auto; text-align: center; background-color: var(--bg-light); border: 1px solid var(--border-color); border-radius: 12px; padding: 25px;">
+        <h4 style="font-weight: bold; color: var(--primary-dark); margin-bottom: 10px; font-size: 15px;">お急ぎの場合は、直接お電話でも承ります</h4>
+        <p style="font-size: 14px; color: var(--text-light); margin-bottom: 15px;">「ネット操作が苦手」「すぐに来てほしい」という方はお気軽にお電話ください。</p>
+        <a href="tel:090-1176-0994" style="font-size: 24px; font-weight: 800; color: var(--secondary); display: inline-flex; align-items: center; gap: 8px;">
+          📞 090-1176-0994
+        </a>
+        <div style="font-size: 12px; color: var(--text-light); margin-top: 5px;">受付時間：10:00 〜 20:00（年中無休）</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">乱世工房<span>Ranse Factory</span></div>
+        <p>
+          徳島県美馬郡を拠点とする地域密着型の高価買取店です。不用品の査定、生前・遺品整理、修理のご相談まで、何でも丁寧に対応いたします。
+        </p>
+      </div>
+      <div class="footer-links">
+        <h4>リンク一覧</h4>
+        <ul>
+          <li><a href="index.html">トップページ</a></li>
+          <li><a href="categories.html">買取品目</a></li>
+          <li><a href="cases.html">買取実績</a></li>
+          <li><a href="about.html">店舗情報・アクセス</a></li>
+          <li><a href="contact.html">無料査定フォーム</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>買取対象ジャンル</h4>
+        <ul>
+          <li><a href="categories.html">金・プラチナ・貴金属</a></li>
+          <li><a href="categories.html">ブランドバッグ・時計</a></li>
+          <li><a href="categories.html">家電・デジタル機器</a></li>
+          <li><a href="categories.html">美術品・骨董品</a></li>
+          <li><a href="categories.html">工具・電動工具</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>お問い合わせ</h4>
+        <ul class="footer-contact-info">
+          <li>
+            <span>📍</span>
+            <div>〒779-4101<br>徳島県美馬郡つるぎ町貞光東浦21-11</div>
+          </li>
+          <li>
+            <span>📞</span>
+            <div><a href="tel:090-1176-0994" style="font-weight:bold; font-size:15px; color:white;">090-1176-0994</a><br>(受付時間: 10:00〜20:00)</div>
+          </li>
+          <li>
+            <span>📧</span>
+            <div>ransefactory@gmail.com</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 乱世工房（Ranse Factory）. All Rights Reserved.</p>
+      <p>徳島県公安委員会 古物商許可 第XXXXXXXXXXXX号</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
