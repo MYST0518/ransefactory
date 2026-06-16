@@ -130,20 +130,7 @@
               <textarea id="details" name="details" class="form-control" placeholder="例：お品物査定の場合は、メーカー名、型番、動作状況、傷やサビの有無などを。「お困りごと解決メニュー」の場合は、片付けの規模やご希望の日程などをご自由にご記入ください。"></textarea>
             </div>
 
-            <div class="form-group">
-              <label>お品物や現場の写真添付（最大5MBまで）</label>
-              <div class="file-upload-wrapper">
-                <div class="file-upload-icon">📷</div>
-                <div class="file-upload-text">クリックして写真をアップロード、またはここにドラッグ＆ドロップ</div>
-                <div style="font-size:12px; color:var(--text-light); margin-top:5px;">※スマホからそのままカメラ撮影して添付できます</div>
-                <input type="file" id="photoUpload" name="attachment" class="file-upload-input" accept="image/*">
-              </div>
-              
-              <!-- Image Preview Container -->
-              <div class="image-preview" id="imagePreview">
-                <img id="previewImg" src="" alt="添付画像プレビュー">
-              </div>
-            </div>
+
 
             <div class="form-actions">
               <button type="button" class="btn-form btn-form-next" id="nextBtn">入力内容を確認する ➔</button>
@@ -172,13 +159,9 @@
                 <div class="confirm-label">ご希望ジャンル</div>
                 <div class="confirm-val" id="confirmCategory"></div>
               </div>
-              <div class="confirm-row">
+              <div class="confirm-row" style="border-bottom: none;">
                 <div class="confirm-label">ご相談内容</div>
                 <div class="confirm-val" id="confirmDetails"></div>
-              </div>
-              <div class="confirm-row" style="border-bottom: none;">
-                <div class="confirm-label">添付写真</div>
-                <div class="confirm-val" id="confirmPhotoName"></div>
               </div>
             </div>
 
