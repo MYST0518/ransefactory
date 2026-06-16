@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
 
 :root {
-  --primary: #d97706;
-  --primary-light: #f59e0b;
-  --primary-dark: #78350f;
+  --primary: #eab308;
+  --primary-light: #fef08a;
+  --primary-dark: #a16207;
   --secondary: #0f766e;
   --secondary-light: #0d9488;
   --secondary-dark: #115e59;
   --text-dark: #1e293b;
   --text-light: #64748b;
-  --bg-light: #fffbeb;
+  --bg-light: #fef9c3;
   --bg-white: #ffffff;
-  --border-color: #fef3c7;
+  --border-color: #fef08a;
   --max-width: 1200px;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
@@ -208,7 +208,7 @@ section {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, rgba(217, 119, 6, 0.95) 0%, rgba(120, 53, 4, 0.95) 100%), url('assets/hero_banner.png');
+  background: linear-gradient(135deg, rgba(234, 179, 8, 0.98) 0%, rgba(161, 98, 7, 0.95) 100%), url('assets/hero_banner.png');
   background-size: cover;
   background-position: center;
   color: white;
