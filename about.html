@@ -13,7 +13,7 @@
   <!-- NAVIGATION -->
   <header>
     <div class="nav-container">
-      <a href="index.html" class="logo">乱世工房<span>Ranse Factory</span></a>
+      <a href="index.html" class="logo"><img src="assets/logo.jpg" alt="乱世工房 ロゴ" class="logo-icon">乱世工房<span>Ranse Factory</span></a>
       <button class="menu-toggle" id="menuToggle" aria-label="メニュー開閉">
         <span></span>
         <span></span>
@@ -49,7 +49,12 @@
         <div style="background-color: white; border: 1px solid var(--border-color); border-radius: 12px; padding: 35px; box-shadow: var(--shadow-sm);">
           <h2 style="font-size: 22px; font-weight: 700; color: var(--primary-dark); margin-bottom: 25px; border-bottom: 2px solid var(--primary); padding-bottom: 10px;">店舗概要</h2>
           
-          <table class="about-table">
+          <div class="about-shop-layout">
+            <div class="about-shop-logo">
+              <img src="assets/logo.jpg" alt="乱世工房 ロゴ">
+            </div>
+            <div class="about-shop-table-wrapper">
+              <table class="about-table">
             <tbody>
               <tr>
                 <th>屋号</th>
@@ -110,6 +115,8 @@
               </tr>
             </tbody>
           </table>
+            </div>
+          </div>
         </div>
 
         <!-- Google Map iframe -->
