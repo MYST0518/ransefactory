@@ -1645,3 +1645,7 @@ footer {
 .deemphasized-section-title::after {
   display: none !important;
 }
+
+.no-line::after {
+  display: none !important;
+}
