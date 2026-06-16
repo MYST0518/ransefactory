@@ -1209,3 +1209,425 @@ footer {
     opacity: 1;
   }
 }
+
+/* --- LINE High-CVR Revamp Custom Styles --- */
+
+/* Mobile Sticky Footer */
+.sticky-footer-container {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(10px);
+  padding: 10px 15px;
+  border-top: 1px solid var(--border-color);
+}
+
+.sticky-line-btn {
+  width: 70%;
+  background-color: #06c755;
+  color: white;
+  text-align: center;
+  padding: 14px 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 10px rgba(6, 199, 85, 0.25);
+  transition: var(--transition);
+}
+
+.sticky-line-btn:hover {
+  background-color: #05b04b;
+  transform: translateY(-1px);
+}
+
+.sticky-phone-btn {
+  width: 30%;
+  background-color: #475569;
+  color: white;
+  text-align: center;
+  padding: 14px 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  transition: var(--transition);
+}
+
+.sticky-phone-btn:hover {
+  background-color: #334155;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 75px !important;
+  }
+  .sticky-footer-container {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+/* Smartphone Mockup UI */
+.phone-mockup-section {
+  padding: 80px 20px;
+  background-color: var(--bg-light);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.phone-mockup-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.phone-mockup-text {
+  flex: 1.2;
+}
+
+.phone-mockup-text h2 {
+  font-size: 28px;
+  color: var(--primary-dark);
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.phone-mockup-text p {
+  color: var(--text-light);
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.mockup-step-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mockup-step-item {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  padding: 15px 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.mockup-step-item:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-md);
+  border-color: #06c755;
+}
+
+.mockup-step-num {
+  background-color: #06c755;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.mockup-step-content h3 {
+  font-size: 16px;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.mockup-step-content p {
+  font-size: 13.5px;
+  color: var(--text-light);
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.phone-wrapper {
+  flex: 0.8;
+  min-width: 300px;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.phone-body {
+  background: #1e293b;
+  border: 10px solid #0f172a;
+  border-radius: 36px;
+  box-shadow: var(--shadow-lg), 0 25px 50px -12px rgba(0,0,0,0.25);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 540px;
+}
+
+/* Speaker & Camera */
+.phone-notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px;
+  height: 20px;
+  background-color: #0f172a;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  z-index: 10;
+}
+
+.phone-screen {
+  background-color: #7494c4; /* Classic LINE Chat BG */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 15px 15px 15px;
+  font-size: 13px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.chat-header {
+  background-color: #2b394a;
+  color: white;
+  padding: 12px 10px;
+  margin: -25px -15px 15px -15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  position: sticky;
+  top: -25px;
+  z-index: 5;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.chat-bubble {
+  max-width: 75%;
+  padding: 10px 12px;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  position: relative;
+  opacity: 0;
+  animation: slideUpBubble 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.chat-bubble::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+}
+
+.chat-bubble.bot {
+  background-color: white;
+  color: #111;
+  align-self: flex-start;
+  border-top-left-radius: 2px;
+}
+
+.chat-bubble.bot::before {
+  left: -10px;
+  border-right-color: white;
+}
+
+.chat-bubble.user {
+  background-color: #85e249;
+  color: #111;
+  align-self: flex-end;
+  border-top-right-radius: 2px;
+}
+
+.chat-bubble.user::before {
+  right: -10px;
+  border-left-color: #85e249;
+}
+
+.chat-bubble.photo-box {
+  background-color: #85e249;
+  align-self: flex-end;
+  padding: 5px;
+  border-radius: 10px;
+  border-top-right-radius: 2px;
+}
+
+.chat-bubble.photo-box img {
+  border-radius: 8px;
+  width: 100%;
+  max-height: 110px;
+  object-fit: cover;
+  display: block;
+}
+
+.chat-bubble-time {
+  font-size: 9px;
+  color: rgba(255,255,255,0.7);
+  position: absolute;
+  bottom: 2px;
+}
+
+.chat-bubble.bot .chat-bubble-time {
+  right: -32px;
+}
+
+.chat-bubble.user .chat-bubble-time,
+.chat-bubble.photo-box .chat-bubble-time {
+  left: -32px;
+  text-align: right;
+}
+
+/* Chat Input Mock */
+.chat-input-mock {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f6f6f6;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #ddd;
+  z-index: 5;
+}
+
+.chat-input-mock-field {
+  flex: 1;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  height: 32px;
+  padding: 0 15px;
+  font-size: 12px;
+  color: #999;
+  display: flex;
+  align-items: center;
+}
+
+.chat-input-mock-btn {
+  background-color: #06c755;
+  color: white;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+/* Delay for simulation animation */
+.bubble-delay-1 { animation-delay: 0.6s; }
+.bubble-delay-2 { animation-delay: 2.2s; }
+.bubble-delay-3 { animation-delay: 3.8s; }
+
+@keyframes slideUpBubble {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .phone-mockup-container {
+    flex-direction: column;
+    gap: 35px;
+  }
+  .phone-mockup-text {
+    width: 100%;
+  }
+}
+
+/* Micro-LINE link under cases */
+.btn-line-micro {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #06c755;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 700;
+  margin-top: 15px;
+  transition: var(--transition);
+  width: 100%;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(6, 199, 85, 0.15);
+}
+
+.btn-line-micro:hover {
+  background-color: #05b04b;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(6, 199, 85, 0.25);
+}
+
+/* contact page design enhancements */
+.contact-line-hero {
+  background: linear-gradient(135deg, #166534 0%, #06c755 100%);
+  color: white;
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 40px;
+}
+.contact-line-hero h2 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+.contact-line-hero p {
+  font-size: 15px;
+  margin-bottom: 25px;
+  opacity: 0.95;
+}
+.contact-line-hero .btn-line {
+  background-color: white;
+  color: #166534;
+  font-size: 18px;
+  padding: 15px 40px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+.contact-line-hero .btn-line:hover {
+  background-color: #f0fdf4;
+  color: #15803d;
+}
+.deemphasized-section-title {
+  font-size: 20px !important;
+  color: var(--text-light) !important;
+  margin-bottom: 10px !important;
+}
+.deemphasized-section-title::after {
+  display: none !important;
+}
