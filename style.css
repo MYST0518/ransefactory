@@ -1973,3 +1973,140 @@ footer {
     font-size: 14px;
   }
 }
+
+/* Blog List Page Styles */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.blog-item {
+  padding: 35px 0;
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+}
+
+.blog-item:first-child {
+  padding-top: 0;
+}
+
+.blog-item .blog-date {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.blog-item .blog-tag {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.blog-item-title {
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--text-dark);
+  line-height: 1.5;
+  margin: 12px 0 10px;
+}
+
+.blog-item-title a {
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.blog-item-title a:hover {
+  color: var(--secondary);
+}
+
+.blog-excerpt {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 12px;
+}
+
+.blog-more-link {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--secondary);
+  letter-spacing: 0.5px;
+  transition: var(--transition);
+}
+
+.blog-more-link:hover {
+  color: var(--secondary-dark);
+  transform: translateX(3px);
+}
+
+/* Blog Article Detail Styles */
+.blog-article-header {
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.blog-article-header .blog-date {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.blog-article-header .blog-tag {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.blog-article-title {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--text-dark);
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+.blog-article-content h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--secondary-dark);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-left: 12px;
+  border-left: 3px solid var(--primary);
+}
+
+.blog-article-content p {
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.blog-article-footer {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .blog-item-title {
+    font-size: 18px;
+  }
+
+  .blog-excerpt {
+    font-size: 13px;
+  }
+
+  .blog-article-title {
+    font-size: 22px;
+  }
+
+  .blog-article-content h3 {
+    font-size: 16px;
+  }
+
+  .blog-article-content p {
+    font-size: 14px;
+  }
+}
