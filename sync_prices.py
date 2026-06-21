@@ -58,7 +58,7 @@ def normalize_and_hash(content_bytes):
 def generate_rows_html(rows):
     if len(rows) <= 1:
         # If only header or empty
-        return "          <div class=\"price-row\">\n            <div class=\"col-date\">-</div>\n            <div class=\"col-item\">現在、参考価格情報はございません。</div>\n            <div class=\"col-price\">-</div>\n          </div>\n"
+        return "          <div class=\"price-row\">\n            <div class=\"col-date\">-</div>\n            <div class=\"col-item\">現在、買取品目情報はございません。</div>\n          </div>\n"
         
     # First row is header: 日付け, 買取品, 価格 (or similar)
     header = rows[0]
@@ -66,13 +66,12 @@ def generate_rows_html(rows):
     
     html_lines = []
     for idx, row in enumerate(data_rows):
-        # Handle cases where row might not have 3 columns
+        # Handle cases where row might not have enough columns
         date_val = row[0] if len(row) > 0 else ""
         item_val = row[1] if len(row) > 1 else ""
-        price_val = row[2] if len(row) > 2 else ""
         
         # Skip if all are empty
-        if not date_val and not item_val and not price_val:
+        if not date_val and not item_val:
             continue
             
         # 5 items or more (0-indexed so 5th data item is index 4 and beyond) -> collapse
@@ -82,7 +81,6 @@ def generate_rows_html(rows):
             f"          <div class=\"price-row{hidden_class}\">\n"
             f"            <div class=\"col-date\">{date_val}</div>\n"
             f"            <div class=\"col-item\">{item_val}</div>\n"
-            f"            <div class=\"col-price\">{price_val}</div>\n"
             f"          </div>"
         )
         html_lines.append(row_html)
