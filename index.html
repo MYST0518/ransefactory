@@ -90,6 +90,43 @@
     </div>
   </div>
 
+  <!-- LATEST PURCHASE PRICES SECTION -->
+  <section class="price-section">
+    <div class="container" style="max-width: 800px;">
+      <div class="section-header">
+        <span class="section-badge">PRICE LIST</span>
+        <h2 class="section-title">最新の買取品目・参考価格</h2>
+        <p class="section-subtitle">スプレッドシートから定期的に同期されるリアルタイムの参考価格一覧です。</p>
+      </div>
+
+      <div class="price-table-container">
+        <div class="price-table-header">
+          <div class="col-date">更新日</div>
+          <div class="col-item">買取品目</div>
+          <div class="col-price">参考買取価格</div>
+        </div>
+        <div class="price-table-body" id="priceTableBody">
+          <!-- PRICE_TABLE_ROWS_START -->
+          <div class="price-row">
+            <div class="col-date">6月21日</div>
+            <div class="col-item">故障したエアコン</div>
+            <div class="col-price">5000円</div>
+          </div>
+          <!-- PRICE_TABLE_ROWS_END -->
+        </div>
+      </div>
+
+      <!-- Toggle button for expanding more items if there are many -->
+      <div class="price-expand-container" id="priceExpandContainer" style="display: none;">
+        <button id="priceExpandBtn" class="btn-expand">価格表をもっと見る ➔</button>
+      </div>
+      
+      <div style="text-align: center; margin-top: 30px;">
+        <p class="price-notice">※掲載している価格は参考価格となります。お品物の状態や市場相場により変動いたしますので、詳細な査定額は無料LINE査定・お電話にてお問い合わせください。</p>
+      </div>
+    </div>
+  </section>
+
   <!-- LINE MOCKUP SIMULATION SECTION -->
   <section class="phone-mockup-section">
     <div class="phone-mockup-container">
