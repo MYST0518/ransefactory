@@ -153,12 +153,35 @@ def update_blog_list_html(file_path, new_list_html):
 def main():
     force_update = "--force" in sys.argv
     
-    # 1. Fetch
-    csv_bytes = fetch_csv_data(SHEET_CSV_URL)
+    # Check if a local CSV file path is provided as an argument for offline testing
+    local_csv_path = None
+    for arg in sys.argv[1:]:
+        if not arg.startswith("-") and arg.endswith(".csv"):
+            local_csv_path = arg
+            break
+            
+    if local_csv_path:
+        print(f"Testing mode: Reading CSV data from local file '{local_csv_path}'...")
+        if not os.path.exists(local_csv_path):
+            print(f"Error: Local file '{local_csv_path}' not found!", file=sys.stderr)
+            sys.exit(1)
+        with open(local_csv_path, "rb") as f:
+            csv_bytes = f.read()
+    else:
+        # 1. Fetch from sheet
+        csv_bytes = fetch_csv_data(SHEET_CSV_URL)
     
     # 2. Parse & Hash
     rows, current_hash = normalize_and_hash(csv_bytes)
     
+    # Validation: Check if the CSV header is valid for blog posts
+    # (Must have at least 6 columns and start with 'ID')
+    if len(rows) == 0 or len(rows[0]) < 6 or "id" not in rows[0][0].lower():
+        print(f"Warning: Sheet '{SHEET_NAME}' does not appear to exist or has an invalid header structure.")
+        print(f"Expected header starting with 'ID' and at least 6 columns. Found: {rows[0] if rows else 'None'}")
+        print("Skipping HTML update and deployment to prevent overwriting existing blog data.")
+        sys.exit(0)
+        
     # 3. Check for previous hash
     prev_hash = ""
     if os.path.exists(HASH_FILE_PATH):
