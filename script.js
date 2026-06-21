@@ -203,4 +203,51 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // Purchase Price Table Collapsing & Expanding
+  const priceExpandBtn = document.getElementById('priceExpandBtn');
+  const priceExpandContainer = document.getElementById('priceExpandContainer');
+  if (priceExpandBtn) {
+    const hiddenRows = document.querySelectorAll('.price-row.hidden-row');
+    if (hiddenRows.length > 0 && priceExpandContainer) {
+      priceExpandContainer.style.display = 'block';
+    }
+    
+    priceExpandBtn.addEventListener('click', () => {
+      const isExpanded = priceExpandBtn.classList.contains('expanded');
+      
+      hiddenRows.forEach(row => {
+        if (isExpanded) {
+          row.style.display = 'none';
+        } else {
+          if (window.innerWidth <= 600) {
+            row.style.display = 'flex';
+          } else {
+            row.style.display = 'grid';
+          }
+        }
+      });
+      
+      if (isExpanded) {
+        priceExpandBtn.classList.remove('expanded');
+        priceExpandBtn.textContent = '価格表をもっと見る ➔';
+      } else {
+        priceExpandBtn.classList.add('expanded');
+        priceExpandBtn.textContent = '価格表を閉じる ➔';
+      }
+    });
+    
+    window.addEventListener('resize', () => {
+      const isExpanded = priceExpandBtn.classList.contains('expanded');
+      if (isExpanded) {
+        hiddenRows.forEach(row => {
+          if (window.innerWidth <= 600) {
+            row.style.display = 'flex';
+          } else {
+            row.style.display = 'grid';
+          }
+        });
+      }
+    });
+  }
 });
