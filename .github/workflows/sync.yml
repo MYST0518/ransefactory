@@ -1,0 +1,47 @@
+name: Sync Purchase Prices
+
+on:
+  schedule:
+    # 毎日 日本時間 午前9:00（UTC 00:00）に実行
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    # Actionsタブから手動で実行できるようにする
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Run Price Synchronization
+      run: python sync_prices.pyname: Sync Purchase Prices
+
+on:
+  schedule:
+    # 毎日 日本時間 午前9:00（UTC 00:00）に実行
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    # Actionsタブから手動で実行できるようにする
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Run Price Synchronization
+      run: python sync_prices.py
