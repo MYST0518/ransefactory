@@ -1695,16 +1695,165 @@ footer {
   flex: 1;
 }
 
-@media (max-width: 768px) {
-  .about-shop-layout {
-    flex-direction: column;
-    gap: 25px;
+}
+
+/* Purchase Price Table Styling */
+.price-section {
+  padding: 60px 20px;
+  background-color: var(--bg-white);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.price-section .section-badge {
+  display: inline-block;
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+  font-size: 12px;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 99px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.price-section .section-title {
+  margin-top: 5px;
+}
+
+.price-table-container {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin-top: 30px;
+}
+
+.price-table-header {
+  display: grid;
+  grid-template-columns: 140px 1fr 180px;
+  background-color: var(--secondary);
+  color: white;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 15px;
+}
+
+.price-table-body {
+  transition: max-height 0.4s ease;
+}
+
+.price-row {
+  display: grid;
+  grid-template-columns: 140px 1fr 180px;
+  padding: 18px 20px;
+  border-bottom: 1px solid rgba(254, 240, 138, 0.5);
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.price-row:last-child {
+  border-bottom: none;
+}
+
+.price-row:hover {
+  background-color: rgba(254, 249, 195, 0.3);
+}
+
+.price-row .col-date {
+  color: var(--text-light);
+  font-size: 14px;
+}
+
+.price-row .col-item {
+  font-weight: 500;
+  color: var(--text-dark);
+  padding-right: 15px;
+}
+
+.price-row .col-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--secondary-dark);
+  text-align: right;
+}
+
+/* Mobile responsive price table */
+@media (max-width: 600px) {
+  .price-table-header {
+    display: none;
   }
-  .about-shop-logo {
-    flex: 0 0 auto;
-    width: 180px;
-    margin: 0 auto;
+  
+  .price-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 18px 15px;
+    border-bottom: 1px solid rgba(254, 240, 138, 0.7);
+  }
+  
+  .price-row .col-date {
+    font-size: 12px;
+    order: 1;
+  }
+  
+  .price-row .col-item {
+    font-size: 16px;
+    order: 2;
+    padding-right: 0;
+  }
+  
+  .price-row .col-price {
+    font-size: 18px;
+    order: 3;
+    text-align: left;
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .price-row .col-price::before {
+    content: '参考価格:';
+    font-size: 13px;
+    font-weight: normal;
+    color: var(--text-light);
   }
 }
+
+.price-expand-container {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.btn-expand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-light);
+  color: var(--primary-dark);
+  border: 1px solid var(--border-color);
+  padding: 15px 30px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.btn-expand:hover {
+  background-color: var(--primary-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.price-notice {
+  font-size: 13px;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
 
 
