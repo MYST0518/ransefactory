@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}} | 乱世工房コラム</title>
+  <meta name="description" content="{{EXCERPT}}">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo"><img src="assets/logo.jpg" alt="乱世工房 ロゴ" class="logo-icon">乱世工房<span>Ranse Factory</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="メニュー開閉">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">トップ</a></li>
+        <li><a href="categories.html" class="nav-link">買取品目</a></li>
+        <li><a href="cases.html" class="nav-link">買取実績</a></li>
+        <li><a href="business.html" class="nav-link">法人・業者様</a></li>
+        <li><a href="about.html" class="nav-link">店舗情報・地図</a></li>
+        <li><a href="blog.html" class="nav-link active">コラム</a></li>
+        <li><a href="contact.html" class="btn-nav-cta">無料ネット査定</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ARTICLE -->
+  <div class="container" style="max-width: 800px; padding: 100px 20px 80px;">
+    <article class="blog-article">
+      <header class="blog-article-header">
+        <span class="blog-date">{{DATE}}</span>
+        <span class="blog-tag">{{TAG}}</span>
+        <h1 class="blog-article-title">{{TITLE}}</h1>
+      </header>
+
+      <div class="blog-article-content">
+{{CONTENT}}
+      </div>
+
+      <footer class="blog-article-footer">
+        <a href="blog.html" class="btn btn-primary" style="padding: 12px 30px;">← コラム一覧に戻る</a>
+      </footer>
+    </article>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">乱世工房<span>Ranse Factory</span></div>
+        <p>徳島・香川全域対応 of 不用品買取専門店です。不用品の査定、お家の片付け、生前・遺品整理、空き家管理のご相談まで、何でも丁寧に対応いたします。</p>
+      </div>
+      <div class="footer-links">
+        <h4>リンク一覧</h4>
+        <ul>
+          <li><a href="index.html">トップページ</a></li>
+          <li><a href="categories.html">買取品目</a></li>
+          <li><a href="cases.html">買取実績</a></li>
+          <li><a href="business.html">法人・業者様向け</a></li>
+          <li><a href="about.html">店舗情報・アクセス</a></li>
+          <li><a href="blog.html">コラム</a></li>
+          <li><a href="contact.html">無料査定フォーム</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>買取対象ジャンル</h4>
+        <ul>
+          <li><a href="categories.html">金・プラチナ・貴金属</a></li>
+          <li><a href="categories.html">ブランドバッグ・時計</a></li>
+          <li><a href="categories.html">家電・デジタル機器</a></li>
+          <li><a href="categories.html">美術品・骨董品</a></li>
+          <li><a href="categories.html">工具・電動工具</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>お問い合わせ</h4>
+        <ul class="footer-contact-info">
+          <li><span>📍</span><div>〒779-4101<br>徳島県美馬郡つるぎ町貞光字東浦7-5</div></li>
+          <li><span>📞</span><div><a href="tel:090-1176-0994" style="font-weight:bold; font-size:15px; color:white;">090-1176-0994</a><br>(受付時間: 24時間営業)</div></li>
+          <li><span>📧</span><div>ransefactory@gmail.com</div></li>
+          <li><span>📸</span><div><a href="https://www.instagram.com/ransekoubou/?hl=ja" target="_blank" style="font-weight:bold; color:white; text-decoration:underline;">公式Instagram</a></div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 乱世工房（Ranse Factory）. All Rights Reserved.</p>
+      <p>徳島県公安委員会 古物商許可 第801100000273号</p>
+    </div>
+  </footer>
+
+  <div class="sticky-footer-container">
+    <a href="https://lin.ee/PN33evo" target="_blank" class="sticky-line-btn">💬 LINEで無料査定</a>
+    <a href="tel:090-1176-0994" class="sticky-phone-btn">📞 電話</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
