@@ -102,6 +102,7 @@ header {
   color: var(--text-dark);
   padding: 5px 0;
   position: relative;
+  white-space: nowrap;
 }
 
 .nav-link::after {
@@ -133,6 +134,7 @@ header {
   font-weight: bold;
   font-size: 14px;
   box-shadow: var(--shadow-sm);
+  white-space: nowrap;
 }
 
 .btn-nav-cta:hover {
@@ -1108,7 +1110,23 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1025px) and (max-width: 1250px) {
+  .nav-menu {
+    gap: 12px;
+  }
+  .nav-link {
+    font-size: 13px;
+  }
+  .logo {
+    font-size: 18px;
+  }
+  .btn-nav-cta {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1024px) {
   header {
     position: relative;
   }
@@ -1145,7 +1163,9 @@ footer {
   .menu-toggle.active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -6px);
   }
-  
+}
+
+@media (max-width: 768px) {
   .hero-title {
     font-size: 26px !important;
     line-height: 1.6 !important;
