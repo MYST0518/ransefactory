@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'Anse Creative | 高品質ホームページ制作・運用保守パッケージ</title>
+  <link rel="stylesheet" href="static/dashboard.css?v=1.0.6">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+  <!-- Background Floating Shapes -->
+  <div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">L'Anse Creative<span>Web Design</span></a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">HOME</a></li>
+        <li><a href="#services-sec" class="nav-link">SERVICES</a></li>
+        <li><a href="#pricing-sec" class="nav-link">PRICING</a></li>
+        <li><a href="#works-sec" class="nav-link">WORKS</a></li>
+        <li><a href="blog.html" class="nav-link">BLOG</a></li>
+        <li><a href="#demoForm" class="btn btn-primary" style="padding: 10px 24px; font-size: 13px;">CONTACT</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container">
+    
+    <!-- Success Alert -->
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('contact_success') === 'true') {
+        document.write('<div class="alert alert-success">お問い合わせを受け付けました。ご記入いただいたメールアドレス宛てに、担当（susumu.miyashita@coedo-music.jp）よりご連絡いたします。</div>');
+      }
+    </script>
+
+    <!-- HERO SECTION -->
+    <div class="hero-wrapper">
+      <div class="hero-container">
+        <div class="hero-text">
+          <div class="badge badge-warning" style="margin-bottom: 20px;">DESIGN × TECHNOLOGY</div>
+          <h1>DESIGN IS VALUE.<span>デザインとテクノロジーで加速するWeb制作</span></h1>
+          <p>お客様のビジネスの価値を最大化する、高品質かつ持続可能なホームページを制作します。専任のクリエイティブチームによるデザイン構築から、ドメイン取得、セキュアなサーバー管理、日々のアップデートまで、月額2,980円（初期費用 98,000円）で全てを代行します。</p>
+          <a href="#demoForm" class="btn btn-primary">無料デモ制作を相談する ➔</a>
+        </div>
+        
+
+      </div>
+      
+      <!-- Vertical Scroll Indicator -->
+      <div class="scroll-indicator">
+        <span>SCROLL DOWN</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+
+    <!-- SERVICES (3 FEATURES) -->
+    <div class="section-title-wrap" id="services-sec">
+      <span class="section-subtitle">Services</span>
+      <h2 class="section-title">私たちの提供サービス</h2>
+    </div>
+    <div class="feature-list">
+      <div class="feature-item">
+        <div class="feature-number">01</div>
+        <div class="feature-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <circle cx="12" cy="12" r="6"></circle>
+            <circle cx="12" cy="12" r="2"></circle>
+            <path d="M12 2v2M12 20v2M2 12h2M20 12h2"></path>
+          </svg>
+        </div>
+        <h3>目的や強みに沿った最適な構成</h3>
+        <p>ヒアリング情報に基づいて、専任スタッフが強みを効果的に訴求する構成案とレイアウトパターンを作成。魅力が伝わるコンテンツをお届けします。</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-number">02</div>
+        <div class="feature-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+        </div>
+        <h3>サーバー管理・保守運用の代行</h3>
+        <p>面倒なサーバーホスティング、常時SSLセキュア化、月々の保守管理はすべてお任せ。アップデートや軽微なテキスト調整も対応可能です。</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-number">03</div>
+        <div class="feature-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M2 12h20"></path>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+        </div>
+        <h3>独自ドメイン取得・DNS設定代行</h3>
+        <p>ご希望の独自ドメインの取得から、複雑なネームサーバー等の設定・紐付け作業まで、制作チーム側ですべてセットアップを完了します。</p>
+      </div>
+    </div>
+
+    <!-- WORKS & CREATIVE SPACE SECTION -->
+    <div id="works-sec" style="margin-bottom: 120px;">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Our Works & Studio</span>
+        <h2 class="section-title">制作実績とクリエイティブ環境</h2>
+      </div>
+      <div class="works-grid">
+        <div class="work-item">
+          <div class="work-info">
+            <span class="work-category">01 / DIGITAL PRODUCTION</span>
+            <h3 class="work-title">洗練されたマルチデバイス対応デザイン</h3>
+            <p class="work-desc">PC・タブレット・スマートフォンのすべてのデバイスで美しく、読みやすく、成果に繋がる完全レスポンシブWebデザイン。細部までこだわり抜いたタイポグラフィと滑らかなユーザー体験で、貴社のブランド価値を劇的に高めます。</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="work-info">
+            <span class="work-category">02 / CREATIVE STUDIO</span>
+            <h3 class="work-title">創作に没頭するスタジオ・ワークスペース</h3>
+            <p class="work-desc">L'Anse Creativeのチームは、最先端のクリエイティブオフィスで制作を行っています。デザイン、フロントエンド技術、SEO対策、インフラサーバー構築のエキスパートが密に連携し、高いクオリティとスピードを両立させます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- PRICING SECTION -->
+    <div class="pricing-section" id="pricing-sec">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Comparison</span>
+        <h2 class="section-title">明確でリーズナブルな料金プラン</h2>
+      </div>
+      <div class="pricing-table-wrapper">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th>費用項目</th>
+              <th>一般的な制作会社</th>
+              <th>フリーランス</th>
+              <th class="highlight">
+                <div class="pricing-badge-wrap">
+                  <span class="pricing-badge">キャンペーン実施中</span>
+                </div>
+                L'Anse Creative
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-name">初期費用（デザイン・構築）</td>
+              <td><span class="pricing-val"><span class="status-icon bad emphasized">×</span>30万 〜 150万円</span></td>
+              <td><span class="pricing-val"><span class="status-icon bad emphasized">×</span>15万 〜 50万円</span></td>
+              <td class="highlight"><span class="pricing-val"><div class="pricing-mobile-badge">キャンペーン実施中</div><span class="status-icon good">✓</span><span style="font-size:18px;font-weight:700;">98,000円</span><br><span style="font-size:11px;color:var(--text-muted);">(通常 150,000円)</span></span></td>
+            </tr>
+            <tr>
+              <td class="feature-name">月額費用（保守・サーバー管理）</td>
+              <td><span class="pricing-val"><span class="status-icon bad emphasized">×</span>5,000円 〜 15,000円</span></td>
+              <td><span class="pricing-val"><span class="status-icon warning emphasized">▲</span>3,000円 〜 8,000円</span></td>
+              <td class="highlight"><span class="pricing-val"><span class="status-icon good">✓</span>2,980円 (税込)</span></td>
+            </tr>
+            <tr>
+              <td class="feature-name">コンテンツ文章作成（原稿構成）</td>
+              <td><span class="pricing-val"><span class="status-icon bad emphasized">×</span>別料金（数万円）</span></td>
+              <td><span class="pricing-val"><span class="status-icon bad emphasized">×</span>お客様自身で執筆</span></td>
+              <td class="highlight"><span class="pricing-val"><span class="status-icon good">✓</span>制作チームによる原稿整理 (無料)</span></td>
+            </tr>
+            <tr>
+              <td class="feature-name">独自ドメインDNS接続設定</td>
+              <td><span class="pricing-val"><span class="status-icon bad emphasized">×</span>別料金 / 複雑な手作業</span></td>
+              <td><span class="pricing-val"><span class="status-icon bad emphasized">×</span>お客様ご自身でDNS操作</span></td>
+              <td class="highlight"><span class="pricing-val"><span class="status-icon good">✓</span>ドメイン連携・設定代行 (無料)</span></td>
+            </tr>
+            <tr>
+              <td class="feature-name">解約違約金 / 最低契約期間</td>
+              <td><span class="pricing-val"><span class="status-icon bad emphasized">×</span>1年〜2年縛り / 残債一括</span></td>
+              <td><span class="pricing-val"><span class="status-icon warning emphasized">▲</span>契約内容による</span></td>
+              <td class="highlight"><span class="pricing-val"><span class="status-icon good">✓</span>なし（いつでも解約可能）</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- STEPS SECTION -->
+    <div class="steps-section">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">How it works</span>
+        <h2 class="section-title">簡単<span style="font-family:var(--font-family);font-weight:700;">3</span>ステップで公開</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <span class="step-number">1</span>
+          <h3>デモサイト制作のご相談</h3>
+          <p>当ページのフォームから、お名前、店舗名、業種を送信。ご相談内容を元に専任の制作チームが最適なデモサイトを組み立てます。</p>
+        </div>
+        <div class="step-card">
+          <span class="step-number">2</span>
+          <h3>構成の確認とレイアウト調整</h3>
+          <p>出来上がったデモサイトのレイアウトと構成案をご確認いただき、管理画面やディレクターを通じてテキストや詳細事項を調整します。</p>
+        </div>
+        <div class="step-card">
+          <span class="step-number">3</span>
+          <h3>独自ドメイン紐付けと本番公開</h3>
+          <p>構成に納得いただけましたら、月額決済を登録。ご希望の独自ドメインを適用し、スピーディにWebサイトを一般公開します。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ SECTION -->
+    <div class="faq-section">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">FAQ</span>
+        <h2 class="section-title">よくあるご質問</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">追加費用はありませんか？</div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              はい、初期費用98,000円（通常150,000円・税込）と月額2,980円（税込）以外に追加の費用は一切発生しません。ドメインの接続設定や常時SSL対応、サーバー維持費、日々の保守管理サービスなどはすべて月額費用に含まれております。
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">解約はいつでも行えますか？</div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              はい、契約期間の縛りや解約違約金などは一切ございません。
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">手持ちの独自ドメインを使うことはできますか？</div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              はい、お客様がすでにお持ちの独自ドメイン（お名前.comやムームードメイン等の管理ドメイン）を紐付けて本番サイトとして公開できます。
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">文章やコンテンツの内容は変更できますか？</div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              はい、デモ作成後に提供される専用管理画面から、キャッチコピー、紹介文、各種メニューやプランのテキスト内容をいつでも自由に変更・更新していただけます。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RECENT BLOGS SECTION -->
+    
+      <div class="blog-preview-section" style="margin: 120px 0;">
+        <div class="section-title-wrap">
+          <span class="section-subtitle">Blog & News</span>
+          <h2 class="section-title">最新のブログ記事</h2>
+        </div>
+        <div class="blog-preview-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px;">
+          
+            <article class="blog-preview-card card" style="padding: 30px; display: flex; flex-direction: column; justify-content: space-between; border-radius: 2px;">
+              <div>
+                <span style="font-size: 11px; color: var(--text-muted); display: block; margin-bottom: 8px;">2026-06-21</span>
+                <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 12px; font-family: var(--font-header);"><a href="blog_detail_1.html" style="color: var(--text-main);">L'Anse Creative 公式ブログを開設しました</a></h3>
+                <p style="font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 20px;">平素より L'Anse Creative をご利用いただき、誠にありがとうございます。
+
+本日より、制作事例のご紹介やWebデザイン、SEO対策、最新のWebテ...</p>
+              </div>
+              <a href="blog_detail_1.html" style="font-size: 11px; font-weight: 700; color: var(--text-main); text-transform: uppercase; letter-spacing: 1px;">READ ARTICLE ➔</a>
+            </article>
+          
+            <article class="blog-preview-card card" style="padding: 30px; display: flex; flex-direction: column; justify-content: space-between; border-radius: 2px;">
+              <div>
+                <span style="font-size: 11px; color: var(--text-muted); display: block; margin-bottom: 8px;">2026-06-21</span>
+                <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 12px; font-family: var(--font-header);"><a href="blog_detail_2.html" style="color: var(--text-main);">初期費用を抑えて高品質なホームページを運用する秘訣</a></h3>
+                <p style="font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 20px;">新しく店舗を開業される際や、会社のコーポレートサイトをリニューアルされる際、「初期費用が数十万〜数百万円もかかってしまう」といったコストの課題に直面することは少...</p>
+              </div>
+              <a href="blog_detail_2.html" style="font-size: 11px; font-weight: 700; color: var(--text-main); text-transform: uppercase; letter-spacing: 1px;">READ ARTICLE ➔</a>
+            </article>
+          
+        </div>
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="blog.html" class="btn btn-secondary">ブログ記事一覧を見る ➔</a>
+        </div>
+      </div>
+    
+
+    <!-- CONTACT FORM SECTION -->
+    <div style="display:flex; justify-content:center; margin-bottom: 120px;">
+      <div class="card" id="demoForm" style="max-width: 700px; width: 100%; padding: 48px;">
+        <h2 class="card-title" style="text-align: center; font-size: 20px; font-weight: 600; margin-bottom: 10px; border-bottom: none; letter-spacing: 1.5px; text-transform: uppercase;">✉ ONLINE ONBOARDING WIZARD</h2>
+        <p style="text-align: center; font-size: 13px; color: var(--text-muted); margin-bottom: 35px; letter-spacing: 0.5px; line-height: 1.6;">いくつかの質問に答えるだけで、あなただけのデモサイトを自動で設計・作成します。</p>
+        
+        <!-- Progress Bar -->
+        <div class="wizard-progress-bar-wrap">
+          <div class="wizard-progress-bar" id="wizardProgress"></div>
+        </div>
+
+        <form action="https://api.web3forms.com/submit" method="POST" id="wizardForm">
+          <!-- Web3Forms Config -->
+          <input type="hidden" name="access_key" value="af7913ef-c4b6-428c-baf5-cd7367700275">
+          <input type="hidden" name="subject" value="【L'Anse Creative】新しいデモ制作・お問い合わせが届きました">
+          <input type="hidden" name="from_name" value="L'Anse Creative お問い合わせ窓口">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          <input type="hidden" name="redirect" value="https://myst0518.github.io/L-Anse-Creative/?contact_success=true">
+          <!-- Step 1: Industry & Vibe -->
+          <div class="wizard-step active" id="step1">
+            <span class="wizard-subtitle">STEP 1. 業種とデザインイメージ</span>
+            
+            <div class="form-group">
+              <label style="margin-bottom: 12px;">ご希望の業種</label>
+              <input type="hidden" name="industry" id="industryInput" value="">
+              <div class="select-card-grid">
+                <div class="select-card" data-val="飲食・カフェ">
+                  <div class="select-card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                      <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                      <path d="M6 1v3M10 1v3M14 1v3"></path>
+                    </svg>
+                  </div>
+                  <div class="select-card-title">飲食・カフェ</div>
+                  <div class="select-card-desc">カフェ、レストラン、バーなど</div>
+                </div>
+                <div class="select-card" data-val="美容・サロン">
+                  <div class="select-card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="6" cy="6" r="3"></circle>
+                      <circle cx="6" cy="18" r="3"></circle>
+                      <line x1="9.8" y1="8.2" x2="20" y2="17"></line>
+                      <line x1="9.8" y1="15.8" x2="20" y2="7"></line>
+                    </svg>
+                  </div>
+                  <div class="select-card-title">美容・サロン</div>
+                  <div class="select-card-desc">美容室、ネイルサロン、エステなど</div>
+                </div>
+                <div class="select-card" data-val="設備・リペア">
+                  <div class="select-card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                    </svg>
+                  </div>
+                  <div class="select-card-title">設備・リペア</div>
+                  <div class="select-card-desc">修理、リフォーム、出張買取など</div>
+                </div>
+                <div class="select-card" data-val="その他店舗・企業">
+                  <div class="select-card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                      <line x1="9" y1="22" x2="9" y2="16"></line>
+                      <line x1="15" y1="22" x2="15" y2="16"></line>
+                      <line x1="9" y1="16" x2="15" y2="16"></line>
+                      <path d="M8 6h.01M16 6h.01M8 10h.01M16 10h.01M12 6h.01M12 10h.01" stroke-width="2"></path>
+                    </svg>
+                  </div>
+                  <div class="select-card-title">その他店舗・企業</div>
+                  <div class="select-card-desc">クリニック、塾、オフィスなど</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-top: 30px;">
+              <label style="margin-bottom: 12px;">デザインの雰囲気（トーン＆マナー）</label>
+              <input type="hidden" name="tone" id="toneInput" value="親しみやすい">
+              <div class="vibe-option-grid">
+                <div class="vibe-option active" data-val="親しみやすい">
+                  <input type="radio" name="tone_radio" checked>
+                  <span class="vibe-option-text">親しみやすい・カジュアル</span>
+                </div>
+                <div class="vibe-option" data-val="高級感がある">
+                  <input type="radio" name="tone_radio">
+                  <span class="vibe-option-text">高級感・信頼感</span>
+                </div>
+                <div class="vibe-option" data-val="シンプル・モダン">
+                  <input type="radio" name="tone_radio">
+                  <span class="vibe-option-text">シンプル・モダン</span>
+                </div>
+                <div class="vibe-option" data-val="その他">
+                  <input type="radio" name="tone_radio">
+                  <span class="vibe-option-text">その他（自由記入）</span>
+                </div>
+              </div>
+              <!-- その他を選んだ場合のテキスト入力欄 -->
+              <div id="toneOtherWrap" style="display:none; margin-top: 12px;">
+                <input type="text" id="toneOtherInput" class="form-control" placeholder="例：ポップで元気、和風・落ち着いた、アウトドア系 など" oninput="document.getElementById('toneInput').value = this.value || 'その他'">
+              </div>
+            </div>
+
+            <div class="wizard-navigation">
+              <div></div> <!-- empty placeholder to push right -->
+              <button type="button" class="btn btn-primary" onclick="nextStep(1)">次へ進む ➔</button>
+            </div>
+          </div>
+
+          <!-- Step 2: Site details -->
+          <div class="wizard-step" id="step2">
+            <span class="wizard-subtitle">STEP 2. 店舗情報と強み</span>
+            
+            <div class="form-group">
+              <label for="company">店舗名・サービス名 <span style="color:var(--text-muted); font-size: 10px;">(必須)</span></label>
+              <input type="text" id="company" name="company" class="form-control" placeholder="例：カフェ・ランセ、株式会社コエド">
+            </div>
+
+            <div class="form-group">
+              <label for="strengths">お店の強みやアピールポイント <span style="color:var(--text-muted); font-size: 10px;">(必須)</span></label>
+              <textarea id="strengths" name="strengths" class="form-control" placeholder="例：駅から徒歩3分、無添加オーガニック食材、深夜2時まで営業など、アピールしたい魅力を箇条書きでも構いません。"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="target">ターゲット層 <span style="color:var(--text-muted); font-size: 10px;">(必須)</span></label>
+              <input type="text" id="target" name="target" class="form-control" placeholder="例：30代の働く女性、週末にリラックスしたいファミリー層など">
+            </div>
+
+            <div class="wizard-navigation">
+              <button type="button" class="btn btn-secondary" onclick="prevStep(2)">← 戻る</button>
+              <button type="button" class="btn btn-primary" onclick="nextStep(2)">次へ進む ➔</button>
+            </div>
+          </div>
+
+          <!-- Step 3: Contact Info & Message -->
+          <div class="wizard-step" id="step3">
+            <span class="wizard-subtitle">STEP 3. お客様情報の入力</span>
+            
+            <div class="form-group">
+              <label for="name">お名前 <span style="color:var(--text-muted); font-size: 10px;">(必須)</span></label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="例：山田 太郎" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">メールアドレス <span style="color:var(--text-muted); font-size: 10px;">(必須)</span></label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="例：yamada@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">電話番号</label>
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="例：090-1234-5678">
+            </div>
+
+            <div class="form-group">
+              <label for="message">ご質問・追加の要望など</label>
+              <textarea id="message" name="message" class="form-control" style="min-height: 80px;" placeholder="ご希望の独自ドメインの案や、その他質問事項がございましたらご自由に入力ください。"></textarea>
+            </div>
+
+            <div class="wizard-navigation">
+              <button type="button" class="btn btn-secondary" onclick="prevStep(3)">← 戻る</button>
+              <button type="button" class="btn btn-primary" onclick="submitWizard()">無料デモ制作を依頼する ➔</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+  </div>
+
+  <script>
+
+
+    // Smooth FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      const answer = item.querySelector('.faq-answer');
+      
+      question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        
+        faqItems.forEach(otherItem => {
+          otherItem.classList.remove('active');
+          const otherAns = otherItem.querySelector('.faq-answer');
+          otherAns.style.maxHeight = '0px';
+        });
+        
+        if (!isActive) {
+          item.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+
+    // Onboarding Wizard JS Logic
+    let currentStepNum = 1;
+    
+    // Select Industry Card click handler
+    const industryCards = document.querySelectorAll('.select-card');
+    const industryInput = document.getElementById('industryInput');
+    industryCards.forEach(card => {
+      card.addEventListener('click', () => {
+        industryCards.forEach(c => c.classList.remove('active'));
+        card.classList.add('active');
+        industryInput.value = card.getAttribute('data-val');
+      });
+    });
+
+    // Select Vibe Radio Click handler
+    const vibeOptions = document.querySelectorAll('.vibe-option');
+    const toneInput = document.getElementById('toneInput');
+    const toneOtherWrap = document.getElementById('toneOtherWrap');
+    const toneOtherInput = document.getElementById('toneOtherInput');
+    vibeOptions.forEach(opt => {
+      opt.addEventListener('click', () => {
+        vibeOptions.forEach(o => o.classList.remove('active'));
+        opt.classList.add('active');
+        opt.querySelector('input[type="radio"]').checked = true;
+        const val = opt.getAttribute('data-val');
+        if (val === 'その他') {
+          toneOtherWrap.style.display = 'block';
+          toneInput.value = toneOtherInput.value || 'その他';
+          toneOtherInput.focus();
+        } else {
+          toneOtherWrap.style.display = 'none';
+          toneOtherInput.value = '';
+          toneInput.value = val;
+        }
+      });
+    });
+
+    function updateProgressBar() {
+      const progressBar = document.getElementById('wizardProgress');
+      const percent = (currentStepNum / 3) * 100;
+      progressBar.style.width = `${percent}%`;
+    }
+
+    function nextStep(step) {
+      if (step === 1) {
+        if (!industryInput.value) {
+          alert('ご希望の業種を選択してください。');
+          return;
+        }
+        document.getElementById('step1').classList.remove('active');
+        document.getElementById('step2').classList.add('active');
+        currentStepNum = 2;
+      } else if (step === 2) {
+        const companyVal = document.getElementById('company').value.trim();
+        const strengthsVal = document.getElementById('strengths').value.trim();
+        const targetVal = document.getElementById('target').value.trim();
+        if (!companyVal || !strengthsVal || !targetVal) {
+          alert('店舗名、強み、ターゲット層は必須項目です。すべてご入力ください。');
+          return;
+        }
+        document.getElementById('step2').classList.remove('active');
+        document.getElementById('step3').classList.add('active');
+        currentStepNum = 3;
+      }
+      updateProgressBar();
+    }
+
+    function prevStep(step) {
+      if (step === 2) {
+        document.getElementById('step2').classList.remove('active');
+        document.getElementById('step1').classList.add('active');
+        currentStepNum = 1;
+      } else if (step === 3) {
+        document.getElementById('step3').classList.remove('active');
+        document.getElementById('step2').classList.add('active');
+        currentStepNum = 2;
+      }
+      updateProgressBar();
+    }
+
+    function submitWizard() {
+      const nameVal = document.getElementById('name').value.trim();
+      const emailVal = document.getElementById('email').value.trim();
+      if (!nameVal || !emailVal) {
+        alert('お名前とメールアドレスは必須項目です。');
+        return;
+      }
+      document.getElementById('wizardForm').submit();
+    }
+    
+    // Set initial progress bar
+    updateProgressBar();
+  </script>
+</body>
+</html>
